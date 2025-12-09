@@ -3,6 +3,20 @@
     margin: 0 auto;
 }
 
+.nav :hover{
+    color: aqua;
+}
+
+.learn-more :hover{
+    background-color: #485C11;
+    color: #ffffff;
+}
+
+.button :hover{
+    background-color: #485C11;
+    color: white;
+}
+
 .table-1{
     display: flex;
     justify-content: center;
@@ -61,8 +75,8 @@
 .menu li a:hover {
     color: aqua;
 }
-.learn-more {
-    background-color: green;
+.learn-more button {
+    background-color: #DFECC6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,15 +85,10 @@
     height: 48px;
     border-radius: 35px;
     margin-top: 22px;
-}
-
-.learn-more li {
-    list-style: none;
-}
-
-.learn-more li a{
-    text-decoration: none;
-    color: white;
+    color: #000000;
+    box-shadow: none;
+    border: none;
+    outline: none;
 }
 
 .banner {
@@ -163,7 +172,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 24px;
-    padding-bottom: 120px;
+    padding-bottom: 20px;
 }
 
 .module{
@@ -188,23 +197,19 @@
     padding-bottom:20px;
 }
 
-.button li{
-    list-style: none;
-}
-
-.button li a{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 700;
-    background-color: #8E9C78;
-    display: flex;
+.button button {
+    background-color: #DFECC6;
     align-items: center;
     justify-content: center;
     gap: 8px;
     width: 127px;
     height: 48px;
-    border-radius: 35px;  
+    border-radius: 35px;
+    margin-top: 22px;
+    color: #000000;
+    box-shadow: none;
+    border: none;
+    outline: none;
 }
 
 .carouset{
@@ -234,12 +239,11 @@
 
 }
 
-.table-head{
+.table-head {
     flex: 1;
 }
 
-.table-head-1{
-    flex: 1;
+.table-border {
     border: 1px solid #E9E9E9;
     border-radius: 20px;
 }
@@ -336,13 +340,6 @@
     font-size: 60px;
 }
 
-.centerd .button li{
-    display: flex;
-    justify-content: center;
-    gap: 120px;
-    background-color: #8E9C78;
-    border-radius: 35px;
-}
 
 .nav li {
     list-style: none;
@@ -369,8 +366,8 @@
     padding-right: 50px;
 }
 
-@media (min-width:768px) and (max-width:1024px)  {
-    .Figma{
+@media (min-width:769px) and (max-width:1024px)  {
+    .Figma {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
@@ -378,6 +375,10 @@
 
     .sidebar{
     display: contents;
+}
+
+.padding{
+    padding-top: 30px;
 }
 
 .table-1{
@@ -388,7 +389,7 @@
     gap: 20px;
 }
 
-.image-1{
+.image-1 {
     display: none;
 }
 
@@ -434,26 +435,6 @@
 }
 .menu li a:hover {
     color: aqua;
-}
-.learn-more {
-    background-color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 127px;
-    height: 48px;
-    border-radius: 35px;
-    margin-top: 22px;
-}
-
-.learn-more li {
-    list-style: none;
-}
-
-.learn-more li a{
-    text-decoration: none;
-    color: white;
 }
 
 .banner {
@@ -565,25 +546,6 @@
     padding-top: 20px;
     padding-right: 80px;
     padding-bottom:20px;
-}
-
-.button li{
-    list-style: none;
-}
-
-.button li a{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 700;
-    background-color: #8E9C78;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 127px;
-    height: 48px;
-    border-radius: 35px;  
 }
 
 .carouset{
@@ -819,7 +781,7 @@
     color: aqua;
 }
 .learn-more {
-    background-color: green;
+    background-color: #485C11;
     display: none;
     align-items: center;
     justify-content: center;
@@ -828,15 +790,10 @@
     height: 48px;
     border-radius: 35px;
     margin-top: 22px;
-}
-
-.learn-more li {
-    list-style: none;
-}
-
-.learn-more li a{
-    text-decoration: none;
-    color: white;
+    color: #E9E9E9;
+    box-shadow: none;
+    border: none;
+    outline: none;
 }
 
 .banner {
@@ -866,7 +823,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    height: 100%;
 }
 
 .background {
@@ -956,26 +913,6 @@
     padding-bottom:20px;
 }
 
-.button li{
-    list-style: none;
-    padding-left: 20px;
-}
-
-.button li a{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 700;
-    background-color: #8E9C78;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 127px;
-    height: 48px;
-    border-radius: 35px;  
-}
-
 .carouset{
     display: block;
     width: 80%;
@@ -983,13 +920,14 @@
 }
 
 .carouset img{
+    padding-top: 30px;
     width: 100%;
 }
 
 .spec{
     text-align: center;
     gap: 120px;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-right: 0px;
     padding-left: 0px;
     padding-bottom: 80px;
@@ -1068,7 +1006,7 @@
     justify-content: center;
     width: 100%;
     padding-bottom: 120px;
-    gap: 20px;
+    gap: 0px;
 }
 
 .table-1{
@@ -1084,7 +1022,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
 }
 
 .section img{
@@ -1104,7 +1042,8 @@
 
 .frame{
     display: block;
-    padding-left: 85px;
+    text-align: center;
+    padding-left: 0px;
     padding-right: 0px;
 }
 
