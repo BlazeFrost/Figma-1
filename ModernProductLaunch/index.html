@@ -13,20 +13,32 @@
 </head>
 
 <body >
+   
     <div class="Figma">
         <header class="header">
             <div class="logo">
-                <h2>Area</h2>
+                <h2 id="title">Area</h2>
             </div>
                 <div class="sidebar">
-                    <button class="image-button"><img src="./assets/icon/Menu icon.png"/></button>
                     <ul class="menu">
-                        <li><a href="#">Benefits</a></li>
-                        <li><a href="#">Specifications</a></li>
-                        <li><a href="#">How-to</a></li>
-                        <li><a href="#">Contract Us</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#specifications">Specifications</a></li>
+                        <li><a href="#howto">How-to</a></li>
+                        <li><a href="#contractus">Contract Us</a></li>
                     </ul>
-                    <div class="learn-more"><button><span>Learn more ↗︎</span></button></div>
+                    <div class="learn-more"><a class="prank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button><span>Learn more ↗︎</span></button></a></div>
+                </div>
+                <div class="sidebar-mobile">
+                    <button class="image-button"><img src="./assets/icon/Menu icon.png"/></button>
+                    <div id="mobile-nav">
+                        <ul id="nav" class="menu">
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="#specifications">Specifications</a></li>
+                            <li><a href="#howto">How-to</a></li>
+                            <li><a href="#contractus">Contract Us</a></li>
+                        </ul>
+                        <div class="learn-more"><a class="prank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button><span>Learn more ↗︎</span></button></a></div>
+                    </div>
                 </div>
         </header>
     
@@ -58,11 +70,11 @@
                 </div>
             </div>
     
-            <div class="benefits">
+            <section class="benefits" id="benefits">
                 <h4 class="text-color">Benefits</h4>
                 <h1>We’ve cracked the code.</h1>
                 <h4 class="text-common">Area provides real insights, without the data overload.</h4>
-            </div>
+            </section>
     
             <div class="modules">
                 <!-- Fix  -->
@@ -93,7 +105,7 @@
     
             <div class="carouset">
 
-<div>
+    <div>
     <h1 class="font">See the BIG picture</h1>
     <p class="text-common">Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region.</p>
                     <ul class="info">
@@ -115,17 +127,17 @@
                             </li>
                         </ul>
                         
-                        <div class="button"><button>Discover More</button></div>
+                        <div class="button"><a class="prank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>Discover More</button></a></div>
 </div>
                     <img class="padding" src="./assets/image/Features carousel v1.png"/>
             </div>
     
-            <div class="spec">
+            <section class="spec" id="specifications">
                 <h3 class="text-common">Specs</h3>
                 <h1>Why Choose Area</h1>
                 <p class="text-common">You need a solution that keeps up. That’s why we developed Area. A developer-friendly approach to streamline your business. </p>
-                <div class="button"><button>Discover More</button></div>
-            </div>
+                <div class="button"><a class="prank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>Discover More</button></a></div>
+            </section>
     
             <div class="table">
                 <div class="table-item">
@@ -229,10 +241,10 @@
                 </div>
             </div>
     
-            <div class="frame">
+            <section class="frame" id="howto">
                 <h1>Map Your Success</h1>
-                <div class="button"><button>Discover More </button></div>
-            </div>
+                <div class="button"><a class="prank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>Discover More </button></a></div>
+            </section>
     
             <div class="modules">
                 <div class="table-modules">
@@ -260,22 +272,22 @@
                 </div>
                     <img src="./assets/image/Image container.png"/>
         
-            </div class="modules">
+            </div>
     
-            <div class="centerd">
+            <section class="centerd" id="contractus">
                 <h1>Connect with us</h1>
                 <span class="text-common">Schedule a quick call to learn how Area can turn your regional data into a powerful advantage.</span>
-                <div class="button-footer"><button>Learn More ↗︎</button></div>
-            </div>
+                <div class="button-footer"><a class="prank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>Learn More ↗︎</button></a></div>
+            </section>
     
             
         </div>
     </div>
     <footer class="footer">
         <ul class="nav">
-            <li><a href="#">Benefits</a></li>
-            <li><a href="#">Specifications</a></li>
-            <li><a href="#">How-to</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#specifications">Specifications</a></li>
+            <li><a href="#howto">How-to</a></li>
         </ul>
 
         <div class="extra">
@@ -288,4 +300,5 @@
             </div>
         </div>
     </footer>
+     <script src="./java/index.js"></script>
 </body>

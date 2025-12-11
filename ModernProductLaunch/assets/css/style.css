@@ -4,6 +4,19 @@ html {
     font-style: normal;
 }
 
+.prank{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.sidebar-mobile{
+    display: none;
+}
+
+.sidebar-mobile .menu.open {
+    display: flex;
+}
+
 .table-status span{
     font-size: 15px;
 
@@ -99,6 +112,11 @@ button:hover {
     justify-content: space-between;
     padding-left: 12px;
     padding-right: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    border-bottom: 1px solid gray;
 }
 
 .logo {
@@ -482,6 +500,10 @@ button:hover {
         margin: 0 auto;
     }
 
+    .sidebar-mobile{
+    display: none;
+}
+
     .sidebar {
         display: contents;
     }
@@ -511,7 +533,7 @@ button:hover {
         justify-content: space-between;
         padding-left: 12px;
         padding-right: 30px;
-        width: 95%;
+        width: 100%;
     }
 
     .logo {
@@ -835,8 +857,42 @@ button:hover {
         margin: 0 auto;
     }
 
+    .sidebar-mobile{
+    display: block;
+    position: relative;
+}
+
+    #mobile-nav{
+        display: none;
+        position: absolute;
+    }
+
+    #mobile-nav.open{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+        background: white;
+        right: 0;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding-bottom: 40px;
+    }
+
+    #mobile-nav .menu{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #mobile-nav .learn-more{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     .sidebar {
-        display: block;
+        display: none;
     }
 
     .image-button {
@@ -853,7 +909,7 @@ button:hover {
         justify-content: space-between;
         padding-left: 0;
         padding-right: 0px;
-        width: 95%;
+        width: 100%;
     }
 
     .logo {
@@ -887,22 +943,6 @@ button:hover {
 
     .menu li a:hover {
         color: aqua;
-    }
-
-    .learn-more {
-        background-color: #485C11;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        width: 127px;
-        height: 48px;
-        border-radius: 35px;
-        margin-top: 22px;
-        color: #E9E9E9;
-        box-shadow: none;
-        border: none;
-        outline: none;
     }
 
     .banner {
